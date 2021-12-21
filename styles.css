@@ -46,16 +46,21 @@ i {
 }
 
 .mainHeader-divisions-2__headings {
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.loginHeaderDiv {
+.mainHeader-divisions-3 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.loginDiv {
+
+.mainHeader-divisions-3__headings {
+  font-size: 15px;
+  font-weight: 400;
+}
+.mainHeader-divisions-3-login {
   height: 40px;
   width: 80px;
   margin-left: 20px;
@@ -65,7 +70,7 @@ i {
   align-items: center;
 }
 
-.div2 {
+.subHeader {
   margin-top: 20px;
   height: auto;
   width: 60%;
@@ -79,7 +84,7 @@ i {
   transform: translateX(-50%);
 }
 
-.subHeaderDivs {
+.subHeader-Divisions {
   flex: 1;
   border-right: 1px solid lightgray;
   padding: 0px;
@@ -88,7 +93,24 @@ i {
   margin-right: 0px;
 }
 
-.subHeaderDivs:hover {
+.subHeader-Divisions__firstLine {
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 20px;
+  padding-bottom: 2px;
+}
+.subHeader-Divisions__secondLine {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  color: gray;
+}
+
+.subHeader-Divisions:hover {
   background-color: lightgray;
   border-radius: 50px;
 }
@@ -115,34 +137,17 @@ i {
   color: black;
 }
 
-.subHeaderDiv {
+.subHeader-Divisions-search {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
   border-right: none;
 }
-.picDiv {
+.firstBackgroundImage {
   height: 500px;
   width: inherit;
   margin: 20px;
   margin-top: 130px;
 
   background-image: url("./images/Landscape-Color.jpg");
-}
-
-.firstLine {
-  font-size: 12px;
-  font-weight: 800;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  margin-left: 20px;
-  padding-bottom: 2px;
-}
-.secondLine {
-  font-size: 14px;
-  font-weight: 600;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 20px;
-  color: gray;
 }
