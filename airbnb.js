@@ -10,6 +10,11 @@ function hidescr() {
 
     scrollHeader.classList.add("headerOnScroll_show");
     console.log("hide");
+  } else {
+    subHeader.classList.remove("subHeader_hide");
+    mainheader.classList.remove("mainHeader_hide");
+
+    scrollHeader.classList.remove("headerOnScroll_show");
   }
 }
 window.addEventListener("scroll", hidescr);

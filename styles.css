@@ -169,13 +169,15 @@ i {
 }
 
 .headerOnScroll {
-  margin-top: 20px;
   padding: 20px;
   width: inherit;
   align-items: center;
   display: none;
   background-color: white;
   color: black;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .headerOnScroll_show {
