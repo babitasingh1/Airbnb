@@ -12,7 +12,13 @@ i {
   color: white;
 }
 .fa-globe {
-  margin-left: 10px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.fa-globe:hover {
+  background-color: rgb(40, 44, 44);
+  cursor: pointer;
 }
 
 .mainHeader {
@@ -47,11 +53,50 @@ i {
   font-weight: 600;
 }
 
+.mainHeader-divisions-1__name:hover {
+  cursor: pointer;
+}
+
+.mainHeader-divisions-1__name:hover .bottomDiv {
+  font-size: 13px;
+  font-weight: 300;
+  width: fit-content;
+  background-color: white;
+  padding: 2px;
+  border-radius: 2px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  display: inline-block;
+  z-index: 2;
+  color: black;
+}
 .fa-airbnb {
   font-size: 35px;
   font-weight: 800;
 }
-
+.bottomDiv {
+  display: none;
+}
+.fa-airbnb:hover .bottomDiv {
+  font-size: 13px;
+  font-weight: 300;
+  width: fit-content;
+  background-color: white;
+  padding: 2px;
+  border-radius: 2px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  display: inline-block;
+  z-index: 2;
+  color: black;
+}
+.fa-airbnb:hover {
+  cursor: pointer;
+}
 .mainHeader-divisions-2__headings {
   font-size: 16px;
   font-weight: 400;
@@ -66,11 +111,18 @@ i {
 .mainHeader-divisions-3__headings {
   font-size: 15px;
   font-weight: 400;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.mainHeader-divisions-3__headings:hover {
+  background-color: rgb(40, 44, 44);
+  cursor: pointer;
 }
 .mainHeader-divisions-3-login {
   height: 40px;
   width: 80px;
-  margin-left: 20px;
+  margin-left: 10px;
   border-radius: 20px;
   background-color: white;
   display: flex;
@@ -84,7 +136,6 @@ i {
   height: auto;
   width: 60%;
   display: flex;
-  align-items: stretch;
   background-color: white;
   border-radius: 60px;
   text-align: left;
@@ -98,7 +149,6 @@ i {
   border-right: 1px solid lightgray;
   margin-top: 12px;
   margin-bottom: 12px;
-  margin-right: 0px;
 }
 
 .subHeader-Divisions:hover {
@@ -108,9 +158,15 @@ i {
   margin-bottom: 0px;
   padding-top: 12px;
   padding-bottom: 12px;
-  border: none;
 }
 
+.subHeader div:hover ~ div {
+  border-right: 1px solid lightgray;
+}
+
+.subHeader:hover > div {
+  border: none;
+}
 .subHeader-Divisions__firstLine {
   font-size: 14px;
   font-weight: 800;
@@ -175,13 +231,16 @@ i {
   display: none;
   background-color: white;
   color: black;
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   z-index: 2;
 }
 
 .headerOnScroll_show {
   display: flex;
+  transition-delay: 10s;
 }
 
 .scrollHeader-divisions-1 {
@@ -212,8 +271,9 @@ i {
 .firstBackgroundImage {
   height: 600px;
   width: inherit;
-  margin: 20px;
+  margin: 40px;
   margin-top: 130px;
+  border-radius: 20px;
   position: relative;
   background-image: url("./images/Landscape-Color.jpg");
 }
@@ -242,4 +302,66 @@ i {
   background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.giftCard {
+  width: "inherit";
+  height: 600px;
+  background-color: rgb(182, 179, 176);
+  margin: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.giftCard__firstHalf {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.giftCard__firstHalf-intro {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.giftCard__firstHalf-info {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  font-size: 95px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.giftCard__firstHalf-button {
+  background-color: black;
+  font-size: 14px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+
+.giftCard__image {
+  flex: 1;
+}
+
+.giftCard__image-image1 {
+  height: 250px;
+  width: 350px;
+  border-radius: 20px;
+  z-index: 0;
+  background-color: rgb(196, 48, 196);
+
+  transform: translate(150px) rotate(-30deg) skewX(20deg);
+}
+
+.giftCard__image-image2 {
+  height: 250px;
+  width: 350px;
+  border-radius: 20px;
+  z-index: 3;
 }
