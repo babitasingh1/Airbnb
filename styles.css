@@ -14,8 +14,16 @@ i {
 .fa-globe {
   padding: 10px;
   border-radius: 50%;
+  transition: color 0.2s;
 }
 
+.changeColorToBlack {
+  color: black;
+}
+
+.changeColorToPink {
+  color: rgb(201, 37, 138);
+}
 .fa-globe:hover {
   background-color: rgb(40, 44, 44);
   cursor: pointer;
@@ -26,6 +34,10 @@ i {
   width: inherit;
   display: flex;
   align-items: center;
+  transform: background-color 0.2s;
+}
+.changeBackground {
+  background-color: white;
 }
 
 .mainHeader_hide {
@@ -51,6 +63,7 @@ i {
 .mainHeader-divisions-1__name {
   font-size: 25px;
   font-weight: 600;
+  transition: color 0.2s;
 }
 
 .mainHeader-divisions-1__name:hover {
@@ -75,6 +88,7 @@ i {
 .fa-airbnb {
   font-size: 35px;
   font-weight: 800;
+  transition: color 0.2s;
 }
 .bottomDiv {
   display: none;
@@ -113,6 +127,7 @@ i {
   font-weight: 400;
   padding: 10px;
   border-radius: 20px;
+  transition: color 0.2s;
 }
 
 .mainHeader-divisions-3__headings:hover {
