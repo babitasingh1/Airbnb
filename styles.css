@@ -8,6 +8,13 @@ button {
   border: none;
   color: white;
 }
+
+.mainHeader__division-headings {
+  color: white;
+  display: inline;
+  padding: 10px;
+  font-weight: 700;
+}
 i {
   color: white;
 }
@@ -30,10 +37,15 @@ i {
 }
 
 .mainHeader {
-  margin-top: 20px;
   width: inherit;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
+  z-index: 2;
   transform: background-color 0.2s;
 }
 .changeBackground {
@@ -90,10 +102,10 @@ i {
   font-weight: 800;
   transition: color 0.2s;
 }
-.bottomDiv {
+.URLatBottom {
   display: none;
 }
-.fa-airbnb:hover .bottomDiv {
+.fa-airbnb:hover .URLatBottom {
   font-size: 13px;
   font-weight: 300;
   width: fit-content;
@@ -112,7 +124,7 @@ i {
   cursor: pointer;
 }
 .mainHeader-divisions-2__headings {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -147,7 +159,6 @@ i {
 .subHeader {
   margin: 0px;
   padding: 0px;
-  margin-top: 20px;
   height: auto;
   width: 60%;
   display: flex;
@@ -156,7 +167,19 @@ i {
   text-align: left;
   position: absolute;
   left: 50%;
+  top: 12%;
+  z-index: 2;
   transform: translateX(-50%);
+  transition: width 0.2s;
+}
+
+.changeWidth {
+  width: 20%;
+  height: 50px;
+  top: 2%;
+  border: 1px solid rgb(219, 219, 219);
+  box-shadow: 1px 1px 5px rgb(219, 219, 219);
+  position: sticky;
 }
 
 .subHeader-Divisions {
@@ -287,9 +310,10 @@ i {
   height: 600px;
   width: inherit;
   margin: 40px;
-  margin-top: 130px;
+  margin-top: 180px;
   border-radius: 20px;
   position: relative;
+
   background-image: url("./images/Landscape-Color.jpg");
 }
 

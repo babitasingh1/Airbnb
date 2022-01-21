@@ -1,4 +1,4 @@
-const subHeadrDivs = document.querySelectorAll(".subHeaderDivs");
+const subHeadrDivs = document.querySelectorAll(".subHeader-Divisions");
 const mainheader = document.querySelector(".mainHeader");
 const subHeader = document.querySelector(".subHeader");
 const scrollHeader = document.querySelector(".headerOnScroll");
@@ -17,6 +17,9 @@ function hidescr() {
     globeIcon.classList.add("changeColorToBlack");
     siteName.classList.add("changeColorToPink");
     siteIcon.classList.add("changeColorToPink");
+    mainheader.classList.add("changeBackground");
+    subHeader.classList.add("changeWidth");
+    subHeadrDivs.forEach((div) => div.classList.add("mainHeader_hide"));
 
     //scrollHeader.classList.add("headerOnScroll_show");
   } else {
@@ -28,6 +31,10 @@ function hidescr() {
     globeIcon.classList.remove("changeColorToBlack");
     siteName.classList.remove("changeColorToPink");
     siteIcon.classList.remove("changeColorToPink");
+    mainheader.classList.remove("changeBackground");
+    subHeader.classList.remove("changeWidth");
+
+    subHeadrDivs.forEach((div) => div.classList.remove("mainHeader_hide"));
   }
 }
 window.addEventListener("scroll", hidescr);
